@@ -49,3 +49,9 @@ jobs:
     steps:
       - name: "Runnning on workflow_dispatch"
         run: echo "Runnning on workflow_dispatch"
+  on-schedule:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Scheduling on particular day & time"
+        run: echo "Scheduling on particular day & time"
