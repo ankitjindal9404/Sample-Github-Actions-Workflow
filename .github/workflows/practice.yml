@@ -1,0 +1,14 @@
+name: "Practice Workflows"
+
+on:
+  push:
+    branches:
+      - '*'
+
+jobs:
+  Practice_jobs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Printing"
+        run: echo "Added Practice workflows"
+      

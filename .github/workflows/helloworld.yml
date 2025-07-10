@@ -1,4 +1,4 @@
-name: "Hello world Workflows"
+name: "Hello world Workflows" #name of the workflows/pipeline.
 
 #controls when the action will run. Triggers the workflows on push done to master or production branches.
 on:
@@ -9,7 +9,7 @@ on:
 
 
 jobs:
-  hello_world:
+  hello_world: #name ofthe jobs.
     runs-on: ubuntu-latest
     steps:
       - name: "Print hello world"
